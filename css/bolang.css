@@ -1,0 +1,271 @@
+.activity_content_mid {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom:90px;
+	width: 100%;
+	
+}
+.ys{
+	width: 100%;
+	height:130px ;
+	background: #1746a2;
+	position: absolute;
+	top:140px;
+}
+.activity_content_mid #wave {
+	width: 100%;
+}
+
+
+/*grow效果*/
+
+@keyframes animateone {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	60% {
+		transform: scale(1.1);
+		opacity: 0.6;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes animate1-line {
+	from {
+		bottom: -100px;
+	}
+	to {
+		bottom: 0px;
+	}
+}
+
+@keyframes animate2-line {
+	from {
+		bottom: -200px;
+	}
+	to {
+		bottom: 0px;
+	}
+}
+
+@keyframes animate3 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes opac {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: .4;
+	}
+}
+
+.animate-font-h3 {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.wrap {
+	width: 1136px;
+	height: 400px;
+	left: 50%;
+	margin-left: -568px;
+	position: relative;
+	top: 108px;
+	z-index: 99;
+}
+
+.wrap .box1 {
+	position: relative;
+	width: 408px;
+	height: 416px;
+	left: 100px;
+	top: 0px;
+}
+
+.wrap .box1 .wrap-top1 {
+	height: 196px;
+	width: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrap .box1 .wrap-top1 .min-arc1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 110px;
+	top: 0px;
+	animation: animateone 600ms linear both;
+}
+
+.wrap .box1 .wrap-top1 .min-arc1> img {
+	width: 100px;
+	height: 100px;
+}
+
+.wrap .box1 .wrap-top1 .top-inline1 {
+	position: absolute;
+	bottom: 0px;
+	left: 158px;
+	width: 0px;
+	height: 94px;
+	border: 1px dashed #FFFFFF;
+	animation: animate1-line 1s linear both;
+}
+
+.wrap .box1 .wrap-bottom1 {
+	height: 196px;
+	width: 400px;
+	position: relative;
+	padding-top: 40px;
+}
+
+.wrap .box1 .wrap-bottom1 .bottom-inline1 {
+	position: absolute;
+	width: 0px;
+	height: 30px;
+	top: 0px;
+	left: 158px;
+	border: 1px dashed #FFFFFF;
+	animation: opac 1s linear both;
+}
+
+.wrap .box1 .wrap-bottom1 .samllarc1 {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 146px;
+	top: -18px;
+	z-index: 99;
+	background-image: url(../images/stair6_arc3.png);
+	background-position: 0px 0px;
+	animation: animate3 400ms linear both;
+}
+
+.wrap .box1 .wrap-bottom1> h2 {
+	width: 408px;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 40px;
+	animation: animate3 1s linear both;
+}
+
+.wrap .box1 .wrap-bottom1> p {
+	width: 408px;
+	height: 90px;
+	animation: animate3 1s linear both;
+}
+
+.wrap .box1 .wrap-bottom1> p> span {
+	display: block;
+	width: 408px;
+	font-size: 16px;
+	height: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+.wrap .box2 {
+	position: relative;
+	width: 460px;
+	height: 510px;
+	right: -580px;
+	top: -510px;
+}
+
+.wrap .box2 .wrap-top2 {
+	height: 290px;
+	width: 460px;
+	overflow: hidden;
+	position: relative;
+}
+
+.wrap .box2 .wrap-top2 .min-arc2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 110px;
+	top: 0px;
+	animation: animateone 600ms linear both;
+}
+
+.wrap .box2 .wrap-top2 .min-arc2> img {
+	width: 100%;
+}
+
+.wrap .box2 .wrap-top2 .top-inline2 {
+	position: absolute;
+	bottom: 10px;
+	left: 158px;
+	width: 0px;
+	height: 186px;
+	border: 1px dashed #FFFFFF;
+	animation: animate2-line 1s linear both;
+}
+
+.wrap .box2 .wrap-bottom2 {
+	height: 184px;
+	width: 460px;
+	position: relative;
+	padding-top: 40px;
+}
+
+.wrap .box2 .wrap-bottom2 .bottom-inline2 {
+	position: absolute;
+	top: 0px;
+	left: 158px;
+	width: 0px;
+	height: 30px;
+	border: 1px dashed #FFFFFF;
+	animation: opac 1s linear both;
+}
+
+.wrap .box2 .wrap-bottom2 .samllarc2 {
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 146px;
+	top: -12px;
+	z-index: 99;
+	background-image: url(../images/stair6_arc3.png);
+	background-position: 0px 0px;
+	animation: animate3 1s linear both;
+}
+
+.wrap .box2 .wrap-bottom2> h2 {
+	width: 460px;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 40px;
+	animation: animate3 1s linear both;
+}
+
+.wrap .box2 .wrap-bottom2> p {
+	width: 460px;
+	height: 90px;
+	animation: animate3 1s linear both;
+}
+
+.wrap .box2 .wrap-bottom2> p> span {
+	display: block;
+	width: 460px;
+	font-size: 16px;
+	height: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+}
